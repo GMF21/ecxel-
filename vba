@@ -20,8 +20,13 @@ Sub calculator()
     
     Range("A3").Value = resultado
     
-    MsgBox valor
+    MsgBox "apresenta o valor de D1 = " & valor
     
+    folha.Range("A4").FormulaLocal = "=MAIÚSCULAS(A2)"
+    
+    For i = 1 To 10
+        folha.Cells(t, i) = i
+    Next i
     
     
     
